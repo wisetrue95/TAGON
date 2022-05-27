@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="411dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/tag_code7"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="70dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/singertextview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dxfoem"
+                android:text="poombun"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/singertextview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dxfoem"
+                android:text="price"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/singerimageview1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center|fill_vertical" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_lock_idle_alarm"
+                    android:fontFamily="@font/dxfoem"
+                    android:text="ToggleButton"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/singerbutton2"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_delete"
+                    android:focusable="false"
+                    android:fontFamily="@font/dxfoem"
+                    android:text="삭제"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

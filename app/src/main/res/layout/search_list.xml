@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_marginTop="10dp"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/poombun"
+            android:layout_width="209dp"
+            android:layout_height="43dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/dxfoem"
+            android:singleLine="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/product_price_main"
+            android:layout_width="209dp"
+            android:layout_height="43dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/dxfoem"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/product_thumbnail_main"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left|center"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/favoritebtn"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_gravity="end"
+            android:background="@drawable/tag_code3" />
+        <!--android:onClick="onButtonClick" -->
+    </FrameLayout>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:entries="@array/spinner"
+        android:textAlignment="textEnd" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="440dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/searchResult"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="#79E9E9FC"
+        android:visibility="gone"
+        android:text="에러없음" />
+
+
+</LinearLayout>
