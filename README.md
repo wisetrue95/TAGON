@@ -1,3 +1,3 @@
 # TAG ON
 
-OCR-based product search application
+OCR-based product search application - Graduation project
